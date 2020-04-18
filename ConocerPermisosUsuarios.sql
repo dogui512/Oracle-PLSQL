@@ -1,7 +1,6 @@
 SELECT 'Login: ' + SYSTEM_USER AS Login_Usuario 
   
 SELECT permission_name AS 'Permisos a nivel de servidor:' 
-
 FROM fn_my_permissions(NULL, 'SERVER') 
 
 DECLARE @Texto AS NVARCHAR(MAX) 
